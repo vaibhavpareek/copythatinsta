@@ -5,4 +5,14 @@
 
 *It is a instagram scrapper which scrap the data from the instagram(public profile) without using any instagram API.This script has been coded with the help of python.*
 
+#Install Dependencies
+```
+pip3 install -r requirement.txt
+```
+
+#Run CopyThatInsta
+```
+python3 instagram.txt
+```
+
 ## [Demonstration](/logo/copyythat.mp4)

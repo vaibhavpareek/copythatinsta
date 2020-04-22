@@ -2,6 +2,6 @@
 [![version](https://img.shields.io/badge/version-1.0.1-red.svg)](https://github.com/vaibhavpareek/featsel/)
 <img src="https://img.shields.io/badge/made%20with-python-blue.svg" alt="made with python">
 
-*It is a instagram scrapper which scrap the data from the instagram using python amazing library suite.*
+*It is a instagram scrapper which scrap the data from the instagram(public profile) without using any instagram API.This script has been coded with the help of python.*
 
 ## [Demonstration](/copyythat.mp4)

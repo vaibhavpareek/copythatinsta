@@ -1,9 +1,10 @@
 from requests import get
-from json import loads
+from json import loads, dump
 from re import compile
 from os import system,path
 import terminal_banner
 import pyfiglet
+import sys
 from bs4 import BeautifulSoup
 def banner():
 	print("\033[1;34;48m* PYTHON BASED SCRIPT V1.0 \033[1;32;48mDeveloped By @Vaibhav Pareek\033[1;31;48m")
@@ -39,6 +40,9 @@ try:
 		script_tag = soup.find('script', text=compile('window\._sharedData'))
 		shared_data = script_tag.string.partition('=')[-1].strip(' ;')
 		json_value = loads(shared_data)
+		with open("data.json", "w") as write_file:
+			dump(json_value, write_file, indent=4)
+		# sys.exit(0)
 		print("\033[1;32;48mBiography :\033[10;35;48m "+ json_value['entry_data']['ProfilePage'][0]['graphql']['user']['biography']+"\n")
 		if(json_value['entry_data']['ProfilePage'][0]['graphql']['user']['is_verified']):
 			print("\033[1;32;48mVerified :\033[10;35;48m Yes\n")
